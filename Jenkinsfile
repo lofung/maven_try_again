@@ -8,7 +8,7 @@ pipeline {
                 checkout scm
 
                 // Build the Maven project
-                bat 'mvn build'
+                bat 'mvn clean package'
             }
         }
     }
